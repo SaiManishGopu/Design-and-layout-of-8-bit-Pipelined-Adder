@@ -1,0 +1,48 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.464.isr11 32bit -- 21 Sep 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: saimanish.gopu   Host: hera3.ece.tamu.edu   HostID: 370A2596   PID: 35888
+Memory  available: 81.4657 GB  physical: 270.2580 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3099.9] ( 20 ),  2 [3099.9] ( 22 ),  4 [3099.9] ( 24 )
+                 6 [3100.3] ( 26 ),  8 [3099.9] ( 28 ), 10 [3099.9] ( 30 )
+                12 [3099.9] ( 32 ), 14 [3099.9] ( 34 ), 16 [3099.8] ( 36 )
+                18 [3099.9] ( 38 )
+        1:       1 [3104.4] ( 21 ),  3 [3099.9] ( 23 ),  5 [3102.3] ( 25 )
+                 7 [3104.9] ( 27 ),  9 [3105.6] ( 29 ), 11 [3099.9] ( 31 )
+                13 [3099.9] ( 33 ), 15 [3099.9] ( 35 ), 17 [3103.5] ( 37 )
+                19 [3099.9] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 30.7 %, 31.3 %, 31.4 %
+Hyperthreading is enabled
+
+
+Simulating `XOR_simcap.spi' on hera3.ece.tamu.edu at 1:31:24 PM, Fri Sep 29, 2023 (process id: 35888).
+Current working directory: /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre XOR_simcap.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+
+Error found by spectre.
+    ERROR (CMI-2011): Unable to open input file `XOR_simcap.spi'.
+        No such file or directory.
+
+
+Aggregate audit (1:31:25 PM, Fri Sep 29, 2023):
+Time used: CPU = 143 ms, elapsed = 200 ms, util. = 71.5%.
+Time spent in licensing: elapsed = 20.9 ms, percentage of total = 10.4%.
+Peak memory used = 39.5 Mbytes.
+Simulation started at: 1:31:24 PM, Fri Sep 29, 2023, ended at: 1:31:25 PM, Fri Sep 29, 2023, with elapsed time (wall clock): 200 ms.
+spectre completes with 1 error, 0 warnings, and 0 notices.
+spectre terminated prematurely due to fatal error.

@@ -1,0 +1,119 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.464.isr11 32bit -- 21 Sep 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: saimanish.gopu   Host: hera3.ece.tamu.edu   HostID: 370A2596   PID: 3951
+Memory  available: 171.0561 GB  physical: 270.2580 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3127.3] ( 20 ),  2 [3144.7] ( 22 ),  4 [3115.0] ( 24 )
+                 6 [3154.4] ( 26 ),  8 [3144.2] ( 28 ), 10 [3143.7] ( 30 )
+                12 [3146.4] ( 32 ), 14 [3125.9] ( 34 ), 16 [3127.3] ( 36 )
+                18 [3113.9] ( 38 )
+        1:       1 [3101.1] ( 21 ),  3 [3301.4] ( 23 ),  5 [3111.9] ( 25 )
+                 7 [3100.1] ( 27 ),  9 [3100.1] ( 29 ), 11 [3100.4] ( 31 )
+                13 [3147.4] ( 33 ), 15 [3147.4] ( 35 ), 17 [3146.4] ( 37 )
+                19 [3101.6] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 13.1 %, 13.8 %, 14.1 %
+Hyperthreading is enabled
+
+
+Simulating `simcap_NAND.spi' on hera3.ece.tamu.edu at 6:26:00 PM, Mon Sep 25, 2023 (process id: 3951).
+Current working directory: /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre simcap_NAND.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/simcap_NAND.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/model18.spi
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 91.164 ms, elapsed = 370.164 ms.
+Time accumulated: CPU = 138.453 ms, elapsed = 370.172 ms.
+Peak resident memory used = 44.8 Mbytes.
+
+Time for Elaboration: CPU = 17.986 ms, elapsed = 17.987 ms.
+Time accumulated: CPU = 156.657 ms, elapsed = 388.408 ms.
+Peak resident memory used = 49.7 Mbytes.
+
+
+Time for EDB Visiting: CPU = 883 us, elapsed = 890.97 us.
+Time accumulated: CPU = 157.751 ms, elapsed = 389.549 ms.
+Peak resident memory used = 50.3 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.MP2: `Pdiblc2' = -8.75063e-06 is negative.
+Notice from spectre during topology check.
+    No DC path from node `A' to ground, Gmin installed to provide path.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 7
+            bsim3v3 4     
+           resistor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 ac 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    1 resistor is changed to resistance form because its value is less than 'rthresh'.
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.MP2: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 7.681 ms, elapsed = 61.6269 ms.
+Time accumulated: CPU = 165.614 ms, elapsed = 451.393 ms.
+Peak resident memory used = 52.4 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************
+AC Analysis `Freq': freq = (10 Hz -> 1 GHz)
+*******************************************
+
+Notice from spectre during DC analysis, during AC analysis `Freq'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X1.net1) = 3.52102 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 686 us, elapsed = 723.124 us.
+
+Opening the PSF file simcap_NAND.raw/Freq.ac ...
+...........9...........8...........7...........6...........5...........4...........3...........2...........1...........0
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `Freq': CPU = 4.506 ms, elapsed = 12.454 ms.
+Time accumulated: CPU = 174.649 ms, elapsed = 476.686 ms.
+Peak resident memory used = 53.7 Mbytes.
+
+
+Aggregate audit (6:26:01 PM, Mon Sep 25, 2023):
+Time used: CPU = 177 ms, elapsed = 482 ms, util. = 36.6%.
+Time spent in licensing: elapsed = 24.1 ms, percentage of total = 5%.
+Peak memory used = 54.2 Mbytes.
+Simulation started at: 6:26:00 PM, Mon Sep 25, 2023, ended at: 6:26:01 PM, Mon Sep 25, 2023, with elapsed time (wall clock): 482 ms.
+spectre completes with 0 errors, 2 warnings, and 5 notices.

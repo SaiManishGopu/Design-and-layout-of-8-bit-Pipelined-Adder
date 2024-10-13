@@ -1,0 +1,18 @@
+;Spice netlist for an inverter and a capacitor
+simulator lang=spectre
+
+include "~/ecen454_714/cellcharacs/model18.spi"
+include "~/ecen454_714/cellcharacs/cell18.spi"
+
+vgnd (gnd 0) vsource dc=0
+vvdd (vdd 0) vsource dc=1.8
+
+acinput (B 0) vsource dc=0 mag=1
+
+R1 (B wire) resistor r=0
+
+X1 (A wire out vdd gnd) NAND wp=0.7u lp=0.2u wn=0.3u ln=0.2u 
+
+Freq ac start=1e+1 stop=1e+9
+save R1:currents
+

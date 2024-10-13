@@ -1,0 +1,23 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout, Sum;
+
+reg  A, B, C;
+
+
+
+fulladder top(Cout, Sum, A, B, C); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/grads/s/saimanish.gopu/ecen454_714/fulladder_run1/testfixture.verilog file
+`include "/home/grads/s/saimanish.gopu/ecen454_714/fulladder_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

@@ -1,0 +1,120 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.464.isr11 32bit -- 21 Sep 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: saimanish.gopu   Host: hera3.ece.tamu.edu   HostID: 370A2596   PID: 36435
+Memory  available: 81.4677 GB  physical: 270.2580 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3099.9] ( 20 ),  2 [3099.9] ( 22 ),  4 [3099.9] ( 24 )
+                 6 [3099.9] ( 26 ),  8 [3099.9] ( 28 ), 10 [3099.6] ( 30 )
+                12 [3099.9] ( 32 ), 14 [3099.9] ( 34 ), 16 [3099.9] ( 36 )
+                18 [3099.9] ( 38 )
+        1:       1 [3099.9] ( 21 ),  3 [3102.1] ( 23 ),  5 [3103.2] ( 25 )
+                 7 [3102.7] ( 27 ),  9 [3102.3] ( 29 ), 11 [3099.9] ( 31 )
+                13 [3100.1] ( 33 ), 15 [3099.9] ( 35 ), 17 [3102.7] ( 37 )
+                19 [3099.9] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 29.7 %, 30.9 %, 31.2 %
+Hyperthreading is enabled
+
+
+Simulating `simcap_XOR.spi' on hera3.ece.tamu.edu at 1:32:11 PM, Fri Sep 29, 2023 (process id: 36435).
+Current working directory: /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre simcap_XOR.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/simcap_XOR.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/model18.spi
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 108.779 ms, elapsed = 211.339 ms.
+Time accumulated: CPU = 169.102 ms, elapsed = 211.349 ms.
+Peak resident memory used = 42.9 Mbytes.
+
+Time for Elaboration: CPU = 21.464 ms, elapsed = 21.4672 ms.
+Time accumulated: CPU = 190.801 ms, elapsed = 233.072 ms.
+Peak resident memory used = 47.9 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.249 ms, elapsed = 1.25909 ms.
+Time accumulated: CPU = 192.342 ms, elapsed = 234.649 ms.
+Peak resident memory used = 48.5 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.MP4: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): X1.IV2.M1: `Pdiblc2' = -8.75063e-06 is negative.
+Notice from spectre during topology check.
+    No DC path from node `A' to ground, Gmin installed to provide path.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 12
+            bsim3v3 12    
+           resistor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+                 ac 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    1 resistor is changed to resistance form because its value is less than 'rthresh'.
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.MP4: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): X1.IV2.M1: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 8.691 ms, elapsed = 27.946 ms.
+Time accumulated: CPU = 201.213 ms, elapsed = 262.806 ms.
+Peak resident memory used = 50.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************
+AC Analysis `Freq': freq = (10 Hz -> 1 GHz)
+*******************************************
+
+Notice from spectre during DC analysis, during AC analysis `Freq'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X1.w2) = 3.60671 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.147 ms, elapsed = 1.17612 ms.
+
+Opening the PSF file simcap_XOR.raw/Freq.ac ...
+...........9...........8...........7...........6...........5...........4...........3...........2...........1...........0
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `Freq': CPU = 5.421 ms, elapsed = 16.669 ms.
+Time accumulated: CPU = 211.651 ms, elapsed = 290.721 ms.
+Peak resident memory used = 51.8 Mbytes.
+
+
+Aggregate audit (1:32:11 PM, Fri Sep 29, 2023):
+Time used: CPU = 214 ms, elapsed = 295 ms, util. = 72.5%.
+Time spent in licensing: elapsed = 24.1 ms, percentage of total = 8.17%.
+Peak memory used = 52.4 Mbytes.
+Simulation started at: 1:32:11 PM, Fri Sep 29, 2023, ended at: 1:32:11 PM, Fri Sep 29, 2023, with elapsed time (wall clock): 295 ms.
+spectre completes with 0 errors, 4 warnings, and 4 notices.

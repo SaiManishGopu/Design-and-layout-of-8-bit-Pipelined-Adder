@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout;
+
+reg  Cin;
+
+wire [3:0]  S;
+
+reg [3:0]  B;
+reg [3:0]  A;
+
+
+
+fourbitadder top(Cout, S, A, B, Cin); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/testfixture.verilog file
+`include "/home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

@@ -1,0 +1,21 @@
+// Library - Design, Cell - fourbitregister, View - schematic
+// LAST TIME SAVED: Sep 13 15:23:58 2023
+// NETLIST TIME: Sep 13 17:17:09 2023
+`timescale 1ns / 1ns 
+
+module fourbitregister ( Q, Clk, D );
+
+
+input  Clk;
+
+output [3:0]  Q;
+
+input [3:0]  D;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "fourbitregister";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

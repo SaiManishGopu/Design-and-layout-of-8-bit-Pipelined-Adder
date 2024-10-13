@@ -1,0 +1,19 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout;
+
+reg  Cin;
+
+wire [3:0]  S;
+
+reg [3:0]  B;
+reg [3:0]  A;
+
+
+
+fourbitadder top(Cout, S, A, B, Cin); 
+ 

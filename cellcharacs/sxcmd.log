@@ -1,0 +1,19 @@
+### Custom WaveView ADV log file, revision O-2018.09 (build Aug 27, ) ###
+### created at 12:05:31 on Sun Oct  1 2023 (Linux AMD64) ###
+### Host Name: hera3.ece.tamu.edu   User ID: saimanish.gopu   PID: 47010   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 60 83
+wv_resize_window {Custom WaveView} 862 544
+wv_move_window {Custom WaveView} {} 8 31
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} 0 0
+wv_move_window {Custom WaveView} {} 8 31
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/grads/s/saimanish.gopu/.cx_hostport/.cx_hostport_hera3.ece.tamu.edu_47010'.

@@ -1,0 +1,2 @@
+artistResMgrCalcExprSetup("true" "plot" "E0" "1.8*average(i("/V1/PLUS" ?result "tran"))")
+artistResMgrCalcExprSetup("true" "plot" "E1" "average(v("/in" ?result "tran"))*average(i("/V0/PLUS" ?result "tran"))")

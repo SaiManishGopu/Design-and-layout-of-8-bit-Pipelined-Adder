@@ -1,0 +1,28 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+always #5 Clk=~Clk;
+
+initial
+begin 
+
+   Clk = 1'b0;
+   D[3:0] = 4'b0000;
+   
+   
+   @(posedge Clk);
+   D=4'b0000;
+   @(posedge Clk);
+   D=4'b0011;
+   @(posedge Clk);
+   D=4'b0101;
+   @(posedge Clk);
+   D=4'b1100;
+   @(posedge Clk);
+   D=4'b1111;
+   #10 $finish;
+
+end 

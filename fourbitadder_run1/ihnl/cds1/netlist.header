@@ -1,0 +1,23 @@
+// Library - Design, Cell - fourbitadder, View - schematic
+// LAST TIME SAVED: Sep 11 19:49:08 2023
+// NETLIST TIME: Sep 11 19:49:41 2023
+`timescale 1ns / 1ns 
+
+module fourbitadder ( Cout, S, A, B, Cin );
+
+output  Cout;
+
+input  Cin;
+
+output [3:0]  S;
+
+input [3:0]  B;
+input [3:0]  A;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "fourbitadder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

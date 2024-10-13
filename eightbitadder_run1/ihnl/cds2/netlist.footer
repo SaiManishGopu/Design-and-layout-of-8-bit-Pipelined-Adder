@@ -1,0 +1,9 @@
+fourbitadder I1 ( net10, net9[0:3], X[3:0], Y[3:0], Cin);
+fourbitadder I0 ( Cout, S[7:4], net3[0:3], net2[0:3], net1);
+fourbitregister I4 ( S[3:0], Clk, net9[0:3]);
+fourbitregister I3 ( net2[0:3], Clk, Y[7:4]);
+fourbitregister I2 ( net3[0:3], Clk, X[7:4]);
+DFF I5 ( net1, net10, Clk, net4);
+inv I6 ( net4, Clk);
+
+endmodule

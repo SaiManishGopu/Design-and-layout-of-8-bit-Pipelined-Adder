@@ -1,0 +1,195 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.464.isr11 32bit -- 21 Sep 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: saimanish.gopu   Host: hera3.ece.tamu.edu   HostID: 370A2596   PID: 9509
+Memory  available: 79.7233 GB  physical: 270.2580 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+All processors running at 3099.9 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 ( 20 ),  2 ( 22 ),  4 ( 24 ),  6 ( 26 ),  8 ( 28 )
+                10 ( 30 ), 12 ( 32 ), 14 ( 34 ), 16 ( 36 ), 18 ( 38 )
+        1:       1 ( 21 ),  3 ( 23 ),  5 ( 25 ),  7 ( 27 ),  9 ( 29 )
+                11 ( 31 ), 13 ( 33 ), 15 ( 35 ), 17 ( 37 ), 19 ( 39 )
+        
+System load averages (1min, 5min, 15min) : 30.1 %, 30.4 %, 31.1 %
+Hyperthreading is enabled
+
+
+Simulating `XOR.spi' on hera3.ece.tamu.edu at 1:04:23 PM, Fri Sep 29, 2023 (process id: 9509).
+Current working directory: /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre XOR.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/XOR.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/model18.spi
+Reading file:  /home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 118.242 ms, elapsed = 224.75 ms.
+Time accumulated: CPU = 164.528 ms, elapsed = 224.758 ms.
+Peak resident memory used = 41.5 Mbytes.
+
+Time for Elaboration: CPU = 20.508 ms, elapsed = 20.51 ms.
+Time accumulated: CPU = 185.249 ms, elapsed = 245.502 ms.
+Peak resident memory used = 46.5 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.128 ms, elapsed = 1.13583 ms.
+Time accumulated: CPU = 186.643 ms, elapsed = 246.93 ms.
+Peak resident memory used = 47.1 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X3.MP4: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): X3.IV2.M1: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 12
+            bsim3v3 12    
+          capacitor 1     
+           resistor 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X3.MP4: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): X3.IV2.M1: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 8.497 ms, elapsed = 13.8509 ms.
+Time accumulated: CPU = 195.302 ms, elapsed = 260.984 ms.
+Peak resident memory used = 49.2 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*************************************************************
+Transient Analysis `TransientAnalysis': time = (0 s -> 10 ns)
+*************************************************************
+DC simulation time: CPU = 1.334 ms, elapsed = 1.15418 ms.
+
+Opening the PSF file XOR.raw/TransientAnalysis.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (voltage)
+
+...........9...........8...........7...........6...........5...........4...........3.
+
+Notice from spectre at time = 7.27279 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+...........9...........8...........7...........6...........5...........4...........3...
+
+Notice from spectre at time = 7.47279 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+...........9...........8...........7...........6...........5...........4...........3......
+
+Notice from spectre at time = 7.67279 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+...........9...........8...........7...........6...........5...........4...........3........
+
+Notice from spectre at time = 7.87279 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+...........9...........8...........7...........6...........5...........4...........3..........
+
+Notice from spectre at time = 8.07279 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+        Further occurrences of this notice will be suppressed.
+
+...........9...........8...........7...........6...........5...........4...........3...........2...........1...........0
+Number of accepted tran steps =             136
+
+Notice from spectre during transient analysis `TransientAnalysis'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.w2) = 2.184 V
+I: I(vvdd:p) = 304.2 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.0 %)      1 (33.3 %)      2 (52.6 %)      3 (20.0 %)
+                 4 (100.0 %)     5 (25.0 %)      6 (52.4 %)      7 (5.0 %)
+                 8 (60.0 %)      9 (5.0 %)      10 (100.0 %)    11 (100.0 %)
+                14 (100.0 %)    15 (84.2 %)     16 (63.2 %)     17 (100.0 %)
+                18 (57.9 %)     19 (5.3 %)      20 (19.0 %)     21 (10.0 %)
+                22 (30.0 %)     23 (10.0 %)     25 (20.0 %)     26 (55.0 %)
+                27 (5.3 %)      28 (55.0 %)     29 (5.0 %)      30 (30.0 %)
+                31 (5.0 %)      32 (100.0 %)    33 (5.0 %)      35 (10.0 %)
+                36 (10.0 %)     37 (9.5 %)      38 (45.0 %)     39 (5.0 %)
+        Other   
+Initial condition solution time: CPU = 1.441 ms, elapsed = 1.24717 ms.
+Intrinsic tran analysis time:    CPU = 19.305 ms, elapsed = 22.7592 ms.
+Total time required for tran analysis `TransientAnalysis': CPU = 23.149 ms, elapsed = 29.901 ms.
+Time accumulated: CPU = 224.195 ms, elapsed = 298.646 ms.
+Peak resident memory used = 51.2 Mbytes.
+
+
+Notice from spectre.
+    10 notices suppressed.
+
+
+Aggregate audit (1:04:24 PM, Fri Sep 29, 2023):
+Time used: CPU = 226 ms, elapsed = 302 ms, util. = 75.1%.
+Time spent in licensing: elapsed = 22 ms, percentage of total = 7.28%.
+Peak memory used = 51.7 Mbytes.
+Simulation started at: 1:04:23 PM, Fri Sep 29, 2023, ended at: 1:04:24 PM, Fri Sep 29, 2023, with elapsed time (wall clock): 302 ms.
+spectre completes with 0 errors, 4 warnings, and 8 notices.

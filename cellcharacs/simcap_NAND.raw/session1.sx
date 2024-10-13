@@ -1,0 +1,10 @@
+### Custom WaveView session file (version O-2018.09 build Aug 27, ) ###
+### saved at 19:01:05 on Mon Sep 25 2023 ###
+wdf 0 "/home/grads/s/saimanish.gopu/ecen454_714/cellcharacs/simcap_NAND.raw/Freq.ac" load=used 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=81 mntr_b=81 name_width=66 dm=xy:215:210:0:0:0:5e+01:1.00342084253136e+08:1.50214009606168e-06:0:1e+02 dm=xy:858:138:0:0:0:5e+01:8.99657925746864e+08:1.34672842689812e-05:0:2e+02 dm=xy:390:112:0:0:0:5e+01:2.99885981915621e+08:4.4893235874865e-06:0:2e+02 dm=xy:478:78:0:0:0:5e+01:4.00228056168757e+08:5.99142284299424e-06:0:2e+02 dm=xy:566:54:0:0:0:5e+01:5.00570130421893e+08:7.49350241059579e-06:0:2e+02 dm=xy:653:24:0:0:0:5e+01:5.99771953831243e+08:8.97847151568209e-06:0:2e+02 dm=xy:741:215:0:0:0:5e+01:7.00114028084378e+08:1.04804999933425e-05:0:2e+02 dm=xy:829:175:0:0:0:5e+01:8.00456102337514e+08:1.19824258005208e-05:0:2e+02 dm=xy:302:177:0:0:0:5e+01:1.99543907662486e+08:2.98720309968557e-06:0:2e+02 dm=xy:858:50:0:0:0:5e+01:1.00114025084379e+09:1.49692100761595e-05:0:2e+02 "name=waveview 1" 
+  panel_begin linear pidx=0 spath=name+file complex=mag xaxis=log xlabel="freq(Hz)" ylabel="Mag(A)" 
+    line src=wdf lidx=0 fidx=0 "delim=.^" sigtype=2 "name=R1:1" attr=0:0:1:0 autoset=true disp=show 
+  panel_end
+waveview_end
+browserOpened

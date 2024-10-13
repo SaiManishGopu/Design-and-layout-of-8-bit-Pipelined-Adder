@@ -1,0 +1,40 @@
+// Library - Design, Cell - eightbitadder, View - schematic
+// LAST TIME SAVED: Sep 13 17:13:22 2023
+// NETLIST TIME: Sep 13 17:17:09 2023
+`timescale 1ns / 1ns 
+
+module eightbitadder ( Cout, S, Cin, Clk, X, Y );
+
+output  Cout;
+
+input  Cin, Clk;
+
+output [7:0]  S;
+
+input [7:0]  X;
+input [7:0]  Y;
+
+// Buses in the design
+
+wire  [0:3]  net9;
+
+wire  [0:3]  net3;
+
+wire  [0:3]  net2;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "eightbitadder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+fourbitadder I1 ( net10, net9[0:3], X[3:0], Y[3:0], Cin);
+fourbitadder I0 ( Cout, S[7:4], net3[0:3], net2[0:3], net1);
+fourbitregister I4 ( S[3:0], Clk, net9[0:3]);
+fourbitregister I3 ( net2[0:3], Clk, Y[7:4]);
+fourbitregister I2 ( net3[0:3], Clk, X[7:4]);
+DFF I5 ( net1, net10, Clk, net4);
+inv I6 ( net4, Clk);
+
+endmodule

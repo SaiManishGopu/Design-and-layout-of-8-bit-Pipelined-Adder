@@ -1,0 +1,18 @@
+// Library - Design, Cell - fulladder, View - schematic
+// LAST TIME SAVED: Sep 11 14:01:22 2023
+// NETLIST TIME: Sep 11 14:18:51 2023
+`timescale 1ns / 1ns 
+
+module fulladder ( Cout, Sum, A, B, C );
+
+output  Cout, Sum;
+
+input  A, B, C;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "fulladder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

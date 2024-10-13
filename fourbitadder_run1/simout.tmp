@@ -1,0 +1,65 @@
+TOOL:	ncxlmode	15.20-s086: Started on Sep 13, 2023 at 18:59:44 CDT
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/testfixture.template
+	-f /home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/verilog.inpfiles
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/.simTmpNCCmd "
+	+mpssession+virtuoso32011
+	+mpshost+zach-127-14.engr.tamu.edu
+	-s
+Recompiling... reason: file './testfixture.verilog' is newer than expected.
+	expected: Mon Sep 11 20:07:16 2023
+	actual:   Wed Sep 13 18:58:53 2023
+file: /home/grads/s/saimanish.gopu/ecen454_714/fourbitadder_run1/testfixture.template
+	module worklib.test:template
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:template <0x33a826db>
+			streams:   6, words:  7393
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                26       5
+		Primitives:             20       2
+		Registers:               3       3
+		Scalar wires:            1       -
+		Expanded wires:          8       2
+		Initial blocks:          2       2
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.test:template
+ncsim> 
+ncsim> source /opt/coe/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+ncsim> input -quiet .reinvoke.sim
+ncsim> file delete .reinvoke.sim
+ncsim> run
+At time t=                   0ns, A=0000, B=0000, Cin=0, S=0000, Cout=0
+At time t=                  50ns, A=1111, B=1111, Cin=0, S=1110, Cout=1
+At time t=                 100ns, A=1010, B=1010, Cin=1, S=0101, Cout=1
+At time t=                 150ns, A=0101, B=0101, Cin=1, S=1011, Cout=0
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	15.20-s086: Exiting on Sep 13, 2023 at 19:03:25 CDT  (total: 00:03:41)

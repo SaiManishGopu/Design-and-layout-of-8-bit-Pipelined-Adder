@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+NCSU_Digital_Parts/DFF/schematic DFF
+Design/fourbitadder/schematic fourbitadder
+Design/fourbitregister/schematic fourbitregister
+Design/fulladder/schematic fulladder
+Design/eightbitadder/schematic eightbitadder
+$endmodel
+$net
+$endnet
+$param
+$endparam

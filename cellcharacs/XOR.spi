@@ -1,0 +1,24 @@
+;Spice netlist for an inverter and a capacitor
+simulator lang=spectre
+
+include "~/ecen454_714/cellcharacs/model18.spi"
+include "~/ecen454_714/cellcharacs/cell18.spi"
+
+vgnd (gnd 0) vsource dc=0
+vvdd (vdd 0) vsource dc=1.8
+vA (A 0) vsource dc=1.8
+
+vpwl (B 0) vsource type=pwl wave=[0n 0 1n 0 1.2n 1.8 4n 1.8 4.2n 0]
+
+X3 (A B out vdd gnd) XOR wp=1.6u lp=0.2u wn=0.4u ln=0.2u 
+
+R1 (out 1) resistor r=1
+C1 (1 0) capacitor c=100f
+
+TransientAnalysis tran start=0 stop=10ns step=1ps
+save A B out
+
+
+
+
+
